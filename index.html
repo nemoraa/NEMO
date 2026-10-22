@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dff5ff">
+  <meta name="description" content="NEMO — عالم صغير من الألعاب والفن والدبلجة والبث المباشر.">
+  <title>NEMO | My Little Ocean</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- فقاعات الخلفية -->
+  <div class="ocean-background" aria-hidden="true">
+    <div class="ambient-bubble b1"></div>
+    <div class="ambient-bubble b2"></div>
+    <div class="ambient-bubble b3"></div>
+    <div class="ambient-bubble b4"></div>
+    <div class="ambient-bubble b5"></div>
+    <div class="ambient-bubble b6"></div>
+    <span class="floating-shell shell-one">🐚</span>
+    <span class="floating-shell shell-two">💫</span>
+    <span class="floating-shell shell-three">✧</span>
+  </div>
+
+  <!-- شاشة البداية -->
+  <section id="intro" class="intro-screen">
+    <div class="intro-stars" aria-hidden="true">✧ · ˚ ༘ ⋆｡˚ 💦 ˚｡⋆ ༘ ˚ · ✧</div>
+
+    <p class="intro-eyebrow" data-i18n="introEyebrow">
+      حكاية صغيرة تبدأ تحت البحر
+    </p>
+
+    <button id="magicBubble" class="magic-bubble"
+      type="button" aria-label="افتحي عالم NEMO">
+      <span class="bubble-glow"></span>
+      <span class="bubble-shine"></span>
+      <span class="bubble-content">
+        <span class="bubble-shell">🤍</span>
+        <span class="bubble-name">NEMO</span>
+        <span class="bubble-tap" data-i18n="tapHint">اضغطي لتكتشفي عالمي</span>
+      </span>
+      <span class="bubble-ring"></span>
+    </button>
+
+    <p id="bubbleMessage" class="bubble-message" aria-live="polite">
+      لمسة أولى... السحر بيبدأ 🫧
+    </p>
+
+    <div class="bubble-progress" aria-label="تقدم فتح الموقع">
+      <span class="progress-dot active"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+    </div>
+
+    <p class="intro-footer" data-i18n="introFooter">
+      اضغطي على الفقاعة 3 مرات لفتح البوابة 🌺
+    </p>
+  </section>
+
+  <!-- الموقع الرئيسي -->
+  <main id="mainSite" class="main-site" aria-hidden="true" inert>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="NEMO Home">
+        <span class="brand-icon">🌺</span>
+        <span>NEMO<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#about" data-i18n="navAbout">عنّي</a>
+        <a href="#world" data-i18n="navWorld">عوالمي</a>
+        <a href="#social" data-i18n="navSocial">حساباتي</a>
+      </nav>
+
+      <button id="languageToggle" class="language-button" type="button">
+        EN
+      </button>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <span class="tiny-label" data-i18n="heroLabel">
+          WELCOME TO MY LITTLE OCEAN
+        </span>
+
+        <h1>
+          <span data-i18n="heroHello">أهلًا بكِ في عالم</span>
+          <span class="nemo-title">NEMO<span>🌺</span></span>
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          مكان صغير مليان ألعاب، رسومات، أصوات وحكايات...
+          خدي نفسًا عميقًا وتعالي نغوص سوا! 💫
+        </p>
+
+        <div class="hero-tags">
+          <span>🎮 Gamer</span>
+          <span>🎙️ Voice Actress</span>
+          <span>🎨 Artist</span>
+          <span>📡 Streamer</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#world" data-i18n="exploreButton">
+            اكتشفي عالمي 🤍
+          </a>
+          <a class="secondary-button" href="#social" data-i18n="followButton">
+            تعالي نتواصل 🤍
+          </a>
+        </div>
+
+        <p class="hero-note" data-i18n="heroNote">
+          صُنع بحب، وفقاعات كثيرة جدًا.
+        </p>
+      </div>
+
+      <div class="hero-art" aria-label="NEMO underwater bubble artwork">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-pearl pearl-one"></div>
+        <div class="hero-pearl pearl-two"></div>
+        <div class="hero-pearl pearl-three"></div>
+
+        <div class="hero-shell">🐚</div>
+        <div class="hero-center-bubble">
+          <span>🌺</span>
+          <strong>NEMO</strong>
+          <small>just keep floating</small>
+        </div>
+
+        <span class="art-spark spark-one">✧</span>
+        <span class="art-spark spark-two">✦</span>
+        <span class="art-spark spark-three">˚</span>
+      </div>
+    </section>
+
+    <!-- نبذة عن NEMO -->
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <span class="tiny-label" data-i18n="aboutLabel">A LITTLE ABOUT ME</span>
+        <h2 data-i18n="aboutTitle">مين NEMO؟ 🐚</h2>
+        <p data-i18n="aboutDescription">
+          فنانة بتحب تخلق عوالم، ولاعبة بتحب المغامرات،
+          وصوت ممكن يحكي ألف حكاية.
+        </p>
+      </div>
+
+      <div class="about-card glass-card">
+        <div class="about-avatar">🌊</div>
+        <div class="about-text">
+          <h3 data-i18n="aboutCardTitle">مرحبًا، أنا NEMO!</h3>
+          <p data-i18n="aboutCardDescription">
+            هنا هتلاقوا شغفي بالألعاب والرسم والدبلجة والبث المباشر.
+            كل ركن في الموقع هو جزء صغير من عالمي، ومستنية أشارككم
+            الحاجات اللي بحبها.
+          </p>
+          <div class="about-details">
+            <span>🌊Ocean lover</span>
+            <span>🤍 Dream collector</span>
+            <span>🎧 Audio enthusiast</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- العوالم -->
+    <section id="world" class="section world-section">
+      <div class="section-heading">
+        <span class="tiny-label" data-i18n="worldLabel">PICK YOUR SHELL</span>
+        <h2 data-i18n="worldTitle">اختاري عالمك المفضل</h2>
+        <p data-i18n="worldDescription">
+          كل صدفة جواها حكاية مختلفة.
+        </p>
+      </div>
+
+      <div class="world-grid">
+
+        <article class="world-card gaming-card">
+          <div class="world-icon">🎮</div>
+          <span class="card-number">01 / PLAY</span>
+          <h3 data-i18n="gamingTitle">عالم الألعاب</h3>
+          <p data-i18n="gamingDescription">
+            مغامرات، ألعاب مفضلة ولحظات مستحيل تتنسي.
+          </p>
+          <a class="card-link" href="#social" data-i18n="gamingLink">
+            اكتشفي الألعاب ←
+          </a>
+        </article>
+
+        <article class="world-card streaming-card">
+          <div class="world-icon">📡</div>
+          <span class="card-number">02 / LIVE</span>
+          <h3 data-i18n="streamingTitle">البث المباشر</h3>
+          <p data-i18n="streamingDescription">
+            تعالوا نلعب ونتكلم ونصنع ذكريات سوا.
+          </p>
+          <a class="card-link" href="#social" data-i18n="streamingLink">
+            زوروا قناتي ←
+          </a>
+        </article>
+
+        <article class="world-card art-card">
+          <div class="world-icon">🎨</div>
+          <span class="card-number">03 / CREATE</span>
+          <h3 data-i18n="artTitle">ركن الفن والرسم</h3>
+          <p data-i18n="artDescription">
+            رسوماتي وألواني وكل فكرة قررت تتحول لفن.
+          </p>
+          <a class="card-link" href="#gallery" data-i18n="artLink">
+            شوفي رسوماتي ←
+          </a>
+        </article>
+
+        <article class="world-card voice-card">
+          <div class="world-icon">🎙️</div>
+          <span class="card-number">04 / VOICE</span>
+          <h3 data-i18n="voiceTitle">الدبلجة والأصوات</h3>
+          <p data-i18n="voiceDescription">
+            شخصيات مختلفة، مشاعر وحكايات بصوتي.
+          </p>
+          <a class="card-link" href="#voice" data-i18n="voiceLink">
+            اسمعي أعمالي ←
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- معرض الرسم -->
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading">
+        <span class="tiny-label" data-i18n="galleryLabel">MY ART DIARY</span>
+        <h2 data-i18n="galleryTitle">صدفاتي الفنية 🎨</h2>
+        <p data-i18n="galleryDescription">
+          مساحة صغيرة لرسوماتي وأعمالي الإبداعية.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="art-tile art-tile-one">
+          <span class="art-emoji">🌊</span>
+          <h3 data-i18n="artWork1">حلم تحت البحر</h3>
+          <span data-i18n="artCategory1">Digital Art</span>
+        </article>
+
+        <article class="art-tile art-tile-two">
+          <span class="art-emoji">🌀</span>
+          <h3 data-i18n="artWork2">لؤلؤة صغيرة</h3>
+          <span data-i18n="artCategory2">Illustration</span>
+        </article>
+
+        <article class="art-tile art-tile-three">
+          <span class="art-emoji">💦</span>
+          <h3 data-i18n="artWork3">فقاعات وأحلام</h3>
+          <span data-i18n="artCategory3">Creative Art</span>
+        </article>
+      </div>
+
+      <p class="gallery-note" data-i18n="galleryNote">
+        ✧ دي نماذج مؤقتة للتصميم. استبدليها بصور رسوماتك الحقيقية.
+      </p>
+    </section>
+
+    <!-- الدبلجة -->
+    <section id="voice" class="section voice-section">
+      <div class="voice-panel glass-card">
+        <div class="voice-illustration">🎧</div>
+        <div class="voice-copy">
+          <span class="tiny-label" data-i18n="voiceLabel">
+            VOICES FROM MY OCEAN
+          </span>
+          <h2 data-i18n="voicePanelTitle">كل صوت له حكاية</h2>
+          <p data-i18n="voicePanelDescription">
+            هنا هتلاقوا عينات من الدبلجة والتمثيل الصوتي.
+            قريبًا هنضيف تسجيلاتي وأعمالي.
+          </p>
+
+          <video
+              id="voiceVideo"
+controls
+  playsinline
+  preload="metadata"
+>
+  <source src="media/nemo.mp4" type="video/mp4">
+  المتصفح لا يدعم تشغيل الفيديو.
+</video>
+
+          <p id="audioHint" class="audio-hint" data-i18n="audioHint">
+            أضيفي ملف تسجيلك في مجلد الموقع، ثم اربطيه من script.js.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- السوشيال ميديا -->
+    <section id="social" class="section social-section">
+      <div class="section-heading">
+        <span class="tiny-label" data-i18n="socialLabel">FIND ME ONLINE</span>
+        <h2 data-i18n="socialTitle">نتقابل فين؟ 🌹</h2>
+        <p data-i18n="socialDescription">
+          تابعي رحلتي من خلال حساباتي.
+        </p>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-card twitch" data-social="twitch"
+          href="https://www.twitch.tv/" target="_blank"
+          rel="noopener noreferrer">
+          <span>🎮</span><strong>Twitch</strong><small data-i18n="socialTwitch">البث المباشر</small>
+        </a>
+
+        <a class="social-card youtube" data-social="youtube"
+          href="https://www.youtube.com/" target="_blank"
+          rel="noopener noreferrer">
+          <span>▶️</span><strong>YouTube</strong><small data-i18n="socialYoutube">فيديوهاتي</small>
+        </a>
+
+        <a class="social-card instagram" data-social="instagram"
+          href="https://www.instagram.com/" target="_blank"
+          rel="noopener noreferrer">
+          <span>📸</span><strong>Instagram</strong><small data-i18n="socialInstagram">يومياتي وفني</small>
+        </a>
+
+        <a class="social-card tiktok" data-social="tiktok"
+          href="https://www.tiktok.com/" target="_blank"
+          rel="noopener noreferrer">
+          <span>🎵</span><strong>TikTok</strong><small data-i18n="socialTiktok">مقاطع قصيرة</small>
+        </a>
+
+        <a class="social-card discord" data-social="discord"
+          href="https://discord.com/" target="_blank"
+          rel="noopener noreferrer">
+          <span>💬</span><strong>Discord</strong><small data-i18n="socialDiscord">مجتمعي</small>
+        </a>
+      </div>
+
+      <div class="social-note glass-card">
+        <span>🤍</span>
+        <p data-i18n="socialNote">
+          كل متابعة هي لؤلؤة جديدة في عالمي. أشوفكم هناك!
+        </p>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">🌀 NEMO</a>
+      <p data-i18n="footerText">صُنع بحب وقليل من سحر المحيط.</p>
+      <a href="#home" class="back-to-top" data-i18n="backToTop">
+        ارجعي للأعلى ↑
+      </a>
+      <span class="copyright">© <span id="currentYear"></span> NEMO 2026</span>
+    </footer>
+
+  </main>
+
+  <button id="backToIntro" class="back-to-intro" type="button"
+    aria-label="العودة لشاشة الفقاعة" title="العودة للفقاعة">
+    💫
+  </button>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
